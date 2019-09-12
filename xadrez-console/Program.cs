@@ -15,12 +15,9 @@ namespace xadrez_console
                 {
                     try
                     {
-                        Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
-
+                        //Console.Clear();
+                        //Tela.imprimirPartida(partida);
+                        //falta alterar a parte para mudar de turno
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
