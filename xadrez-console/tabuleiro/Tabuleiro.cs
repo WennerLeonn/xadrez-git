@@ -46,6 +46,7 @@
             {
                 return null;
             }
+
             Peca aux = peca(pos);
             aux.posicao = null;
             pecas[pos.linha, pos.coluna] = null;

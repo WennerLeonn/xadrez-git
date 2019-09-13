@@ -15,8 +15,8 @@ namespace xadrez_console
                 {
                     try
                     {
-                        //Console.Clear();
-                        //Tela.imprimirPartida(partida);
+                        Console.Clear();
+                        Tela.imprimirPartida(partida);
                         //falta alterar a parte para mudar de turno
 
                         Console.WriteLine();
@@ -34,7 +34,8 @@ namespace xadrez_console
                         Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeDestino(origem, destino);
 
-                        partida.executaMovimento(origem, destino);
+                        partida.realizaJogada(origem, destino);
+                        
 
 
                     }
