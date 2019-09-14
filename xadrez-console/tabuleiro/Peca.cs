@@ -4,7 +4,7 @@
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
-        public int qteMovimento {get; set;}
+        public int qteMovimentos {get; set;}
         public Tabuleiro tab { get; protected set; }
 
         public Peca(Tabuleiro tab, Cor cor)
@@ -12,11 +12,16 @@
             this.posicao = null;
             this.tab = tab;
             this.cor = cor;
-            this.qteMovimento = 0;
+            this.qteMovimentos = 0;
         }
-        public void incrementarQteMovimento()
+        public void incrementarQteMovimentos()
         {
-            qteMovimento++;
+            qteMovimentos++;
+        }
+
+        public void decrementarQteMovimentos()
+        {
+            qteMovimentos--;
         }
 
         public bool existeMovimentosPossiveis()
